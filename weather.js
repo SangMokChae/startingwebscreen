@@ -11,7 +11,7 @@ function getWeather(lat, lng){
     }).then(function(json) {
       const temperature = json.main.temp;
       const place = json.name;
-      weather.innerText = `${temperature} @ ${place}`;
+      weather.innerText = `${temperature}, ${place}`;
     });
 }
 
@@ -31,7 +31,7 @@ function handleGeoSucces(position) {
 }
 
 function handleGeoError() {
-  console.log('Cant aceess geo location');
+  console.log('We cant find your location!');
 }
 
 function askForCoords() {

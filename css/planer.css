@@ -1,0 +1,9 @@
+.planer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 40%;
+  color: white;
+  font-size: 70px;
+}

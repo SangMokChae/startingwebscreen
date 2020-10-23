@@ -2,6 +2,7 @@
 
 @import "reset.css";
 @import "mainform.css";
+@import "planer.css";
 
 body {
   margin-top: 60px;
@@ -33,12 +34,12 @@ body {
 
 h1 {
   position: absolute;
-  color: #2b2d2d;
   top: 0;
   margin: 0;
+  margin-left: 20px;
   font-size: 40px;
   font-weight: 200;
-  text-shadow: black 1px 0 10px;
+  text-shadow: whitesmoke 1px 0 10px;
 }
 
 .js-weather {
@@ -47,5 +48,19 @@ h1 {
   right: 20px;
   font-size: 40px;
   font-weight: 200;
-  text-shadow: black 1px 0 10px;
+  text-shadow: whitesmoke 1px 0 10px;
+}
+
+@keyframes twinkle {
+  from {
+    color: rgba(255, 105, 180, 1);
+  }
+  to {
+    color: #4d2d6d;
+  }
+}
+
+h1,
+.js-weather {
+  animation: twinkle 1s linear infinite;
 }

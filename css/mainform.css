@@ -13,12 +13,26 @@
 .js-form > input,
 .js-toDoForm > input {
   font-family: "Grenze Gotisch", cursive;
-  font-weight: 200;
-  color: #00695f;
   font-size: 30px;
   border-radius: 50px;
   border: none;
   background-color: rgba(225, 225, 225, 0.5);
+}
+
+.js-toDoForm {
+  margin-bottom: 30px;
+}
+
+.js-form input::placeholder,
+.js-toDoForm input::placeholder {
+  color: rgba(0, 0, 0, 1);
+  padding-left: 10px;
+  font-weight: 400;
+  color: #00695f;
+}
+
+input:focus {
+  outline: none;
 }
 
 .form,
@@ -37,10 +51,6 @@
   font-size: 100px;
   color: rgba(225, 225, 225, 1);
   text-shadow: 5px 5px 8px #2196f3, 2px 2px 4px #104b79, 8px 8px 3px white;
-}
-
-.js-toDoForm {
-  margin-bottom: 30px;
 }
 
 .js-toDoList > li {
